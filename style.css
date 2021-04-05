@@ -26,6 +26,7 @@ nav .container {
 nav > .container > svg {
     color:#0a66c2;
 }
+
 nav > .container > .search-bar {
   display: flex;
   align-items: center;
@@ -104,8 +105,6 @@ nav > .container > .me > a {
     text-align: center;
 }
 
-
-
 nav > .container > .me > a >.profile-pic {
     width:30px;
     height: 30px;
@@ -157,6 +156,8 @@ nav > .container > .work > a {
     text-align: center;
 }
 
+
+
 /* main */
 
 main {
@@ -175,7 +176,6 @@ main > .quick-profile-area {
     flex-direction: column;
 }
 
-
 main > .quick-profile-area > .profile {
     display: flex;
     width: 100%;
@@ -186,6 +186,7 @@ main > .quick-profile-area > .profile {
     overflow: hidden;
     position:relative;
     border: 1px solid #00000026;
+    margin-bottom: 6px;
 }
 
 main > .quick-profile-area > .profile > .header-pic {
@@ -195,7 +196,7 @@ main > .quick-profile-area > .profile > .header-pic {
     background-repeat: no-repeat;
     background-size: 462px;
     background-position: center;
-    position:relative;
+    position: relative;
 }
 
 main > .quick-profile-area > .profile > a > .intro {
@@ -206,7 +207,7 @@ main > .quick-profile-area > .profile > a > .intro {
     border-bottom: 1px solid #00000026;
     padding: 12px 16px 14px;
     position: relative;
-    top:-50px;
+    top: -50px;
 }
 
 main > .quick-profile-area > .profile > a  {
@@ -215,7 +216,7 @@ main > .quick-profile-area > .profile > a  {
     
 }
 
-main > .quick-profile-area > .profile > a > .intro:hover:not(small) {
+main > .quick-profile-area > .profile > a > .intro:not(small):hover {
     text-decoration: 2px underline mediumpurple;
 }
 
@@ -224,6 +225,7 @@ main > .quick-profile-area > .profile > a  .intro> p {
     font-weight: 549;
     color:#222;
     font-size: 14px;
+    margin-top: 20px;
 }
 
 main > .quick-profile-area > .profile > a > .intro > small {
@@ -232,13 +234,15 @@ main > .quick-profile-area > .profile > a > .intro > small {
     color: #7c7c7c;
     font-weight: 300;
 }
+
 main > .quick-profile-area > .profile > a > .intro > .pic {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     border: 2px solid #fff;
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
+    /* top: -30px; */
     overflow: hidden;
 }
 
@@ -320,7 +324,6 @@ main > .quick-profile-area > .profile > .access {
     border-bottom: 1px solid #00000026;
 }
 
-
 main > .quick-profile-area > .profile > .access > a {
     text-decoration: none;
 }
@@ -383,16 +386,377 @@ main > .quick-profile-area > .profile > .item > a > span > svg {
     color: #666666;
 }
 
+main > .quick-profile-area > .recent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    position:relative;
+    border: 1px solid #00000026;
+    margin-bottom: 5px;
+    
+}
+
+main > .quick-profile-area > .recent > .header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px 2px 10px;
+}
+
+main > .quick-profile-area > .recent > .header > a {
+    text-decoration: none;
+}
+
+main > .quick-profile-area > .recent > .header > a > p {
+    color:#000;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+main > .quick-profile-area > .recent > .header > .recent-btn {
+    width:24px;
+    height: 24px;
+    border:none;
+    outline:none;
+    display:grid;
+    place-items: center;
+    color: #666;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+main > .quick-profile-area > .recent > .hash {
+    width:100%;
+    margin-bottom: 1%;
+    
+}
+
+main > .quick-profile-area > .recent > .hash > ul li {
+    list-style: none;
+
+}
+
+main > .quick-profile-area > .recent > .hash > ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #666;
+    padding: 1px 10px 6px;
+    font-size: 12px;
+}
+
+main > .quick-profile-area > .recent > .hash > ul li a:hover:not(svg) {
+    background-color:#f3f2ef;
+}
+
+main > .quick-profile-area > .recent > .hash > ul li a > svg {
+    margin-right: 4%;
+    width:16px;
+    height:16px;
+}
+
+main > .quick-profile-area > .recent > a {
+    width: 100%;
+    padding: 12px 0px 0px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color:#0a66c2;
+}
+
+main > .quick-profile-area > .recent > a:hover {
+    text-decoration: underline;
+}
+
+main > .quick-profile-area > .recent > .event {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0px 2px 10px;
+}
+
+main > .quick-profile-area > .recent > .event > a {
+    font-size: 12px;
+    text-decoration: none;
+    color:#0a66c2;
+}
+
+main > .quick-profile-area > .recent > .event > a:hover {
+    text-decoration: underline;
+}
+
+main > .quick-profile-area > .recent > .event > .event-btn {
+    width:30px;
+    height: 30px;
+    border: none;
+    outline:none;
+    display: grid;
+    place-items: center;
+    color:#666666;
+    background-color: transparent;
+}
+
+main > .quick-profile-area > .recent > .event > .event-btn:hover {
+    background-color: #f3f2ef;
+    border-radius: 50%;
+    color:#000;
+}
+
+main > .quick-profile-area > .recent > .followed {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > .quick-profile-area > .recent > .followed a {
+    text-decoration: none;
+    color: #0a66c2;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+main > .quick-profile-area > .recent > .followed a:hover {
+    text-decoration: underline;
+}
+
+main > .quick-profile-area > .recent > .followed > .open-btn {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color: #666;
+    border:none;
+    outline: none;
+    visibility: hidden;
+}
+
+main > .quick-profile-area > .recent > ul li {
+    width:100%;
+    list-style: none;
+}
+
+main > .quick-profile-area > .recent > ul li a {    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #666;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+main > .quick-profile-area > .recent > ul li a > svg {
+    margin-right: 4%;
+    width:16px;
+    height:16px;
+}
+
+main > .quick-profile-area > .recent > ul li a:hover:not(svg) {
+    background-color:#f3f2ef;
+}
+
+main > .quick-profile-area > .recent > .show-more {
+    width:100%;
+    /* margin-bottom: 34px; */
+    border-bottom: 1px solid #00000026;
+}
+
+main > .quick-profile-area > .recent > .show-more > .box:hover {
+    background-color:#f3f2ef;
+}
+
+main > .quick-profile-area > .recent > .show-more > a {
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    padding: 12px 10px 30px 34px;
+    
+}
+
+main > .quick-profile-area > .recent > .discover {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main > .quick-profile-area > .recent > .discover > a {
+    padding:10px;
+    font-size: 14px;
+    color:#666;
+    text-decoration: none;
+}
 
 
 
 
-
+/* Feed */
 
 
 main > .feed {
-    background-color: mediumspringgreen;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+main > .feed > .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #00000026;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+main > .feed > .post >.post-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 0;
+    margin: 4px 0px;
+}
+
+main > .feed > .post > .post-bar> .pic {
+    width:48px;
+    height: 48px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    margin-right: 8px;
+    overflow: hidden;
+}
+
+main > .feed > .post > .post-bar> .pic > a > img {
+    width: 100%;
+}
+
+main > .feed > .post > .post-bar> .bar {
+    display:flex;
+    height: 48px;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding:12px 8px 12px 16px;
+    flex:1;
+    border-radius: 30px;
+    background-color:transparent;
+}
+
+main > .feed > .post > .post-bar> .bar:hover {
+    background-color: #efefef;
+}
+
+main > .feed > .post > .post-bar> .bar > p {
+    color: #666;
+}
+
+main > .feed > .post > .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+}
+
+main > .feed > .post > .media > .btn {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12px;
+    position: relative;
+    
+}
+
+main > .feed > .post > .media > .btn > svg {
+    width:24px;
+    height: 24px;
+    position: relative;
+    top:-2px;
+    
+}
+
+main > .feed > .post > .media > .btn > span {
+    font-size:14px;
+    padding-left: 5px;
+    font-weight: 400;
+    color:#666;
+}
+
+main > .feed > .post > .media > .btn:hover {
+    background-color: #efefef;
+    border-radius: 4px;
+}
+
+main > .feed > .post > .media > .btn1 > svg {
+    color: #70b5f9;
+}
+
+main > .feed > .post > .media > .btn2 > svg {
+    color: #7fc15e;
+}
+
+main > .feed > .post > .media > .btn3 > svg {
+    color: #efc27e;
+}
+
+main > .feed > .post > .media > .btn4 > svg {
+    color: #f5987e;
+}
+
+main > .feed > .separate {
+    display: flex;
+    align-items: center;
+}
+
+main > .feed > .separate > hr {
+    border: 0;
+    height: 1px;
+    width:410px;
+    background-color: #ccc;
+    margin: 0 8px 0 2px;
+}
+
+main > .feed > .separate > .sort {
+    display: flex;
+    align-items: center;
+}
+
+main > .feed > .separate > .sort > span {
+    color: #666666;
+    font-size: 12px;
+}
+
+main > .feed > .separate > .sort > span:first-child {
+    padding-right: 4px;
+}
+
+main > .feed > .separate > .sort > span:nth-child(2) {
+    color:#000;
+}
+
+main > .feed > .separate > .sort > svg {
+    width: 16px;
+    height: 16px;
+    color: #000;
+    margin-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main > .most-viewed {
     background-color: mediumorchid;
