@@ -358,6 +358,11 @@ main > .quick-profile-area > .profile > .item {
     position: relative;
     top: -50px;
     padding: 10px;
+    margin-bottom: -50px;
+}
+
+main > .quick-profile-area > .profile > .item:hover {
+    background-color: #f3f2ef;
 }
 
 main > .quick-profile-area > .profile > .item > a {
@@ -368,10 +373,14 @@ main > .quick-profile-area > .profile > .item > a > span {
     display: flex;
     align-items: center;
     color: #000;
+    font-size: 12px;
 }
 
-main > .quick-profile-area > .profile > .item > a > span> svg {
-    
+main > .quick-profile-area > .profile > .item > a > span > svg {
+    margin-right: 4px;
+    top:2px;
+    position: relative;
+    color: #666666;
 }
 
 
